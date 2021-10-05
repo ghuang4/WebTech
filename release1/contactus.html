@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conact Us Page</title>
+</head>
+
+<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+<link rel="stylesheet" href="https://www.fontspace.com/handy-quomte-font-f57503"/>
+<link rel="stylesheet" href="https://www.fontspace.com/serat-font-f57208"/>
+
+<style>
+    @font-face{font-family: "Handy"; src:url("handy.ttf")}
+    @font-face{font-family: "Serat"; src:url("serat.ttf")}
+    .form {width:50%; margin:auto}
+	h1, h2 {text-align:center}
+	.ar {text-align:right}
+</style>
+
+<body>
+    <h1>Contact Us</h1>
+    <br>
+    <div class = "navbar">
+        <ul>
+            <li><a href = "index.html" class = "Active">Home</a></li>
+
+            <li class = "Manhattan"><a href = "manhattan.html">Manhattan</a>
+                <div class = "Dropdown_Content">
+                    <a href = "manhattan_sub_1.html">Attractions</a>
+                    <a href = "manhattan_sub_2.html">Food Spots</a>
+                </div>
+            </li> 
+
+            <li class = "Queens"><a href = "queens.html">Queens</a>
+                <div class = "Dropdown_Content">
+                    <a href = "queens_sub_1.html">Attractions</a>
+                    <a href = "queens_sub_2.html">Food Spots</a>
+                </div>
+            </li> 
+
+            <li class = "Brooklyn"><a href = "brooklyn.html">Brooklyn</a>
+                <div class = "Dropdown_Content">
+                    <a href = "brooklyn_sub_1.html">Attractions</a>
+                    <a href = "brooklyn_sub_2.html">Food Spots</a>
+                </div>
+            </li> 
+            
+            <li><a href = "aboutme.html">About Me</a></li>
+            <li><a href = "contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+    
+    <h2>Please provide us with some feedback on these attractions and food spots! Email us with any questions or inquiries and we'll be happy to answer them for you! </h2>
+    
+    <br>
+    
+    <div class ="form">
+    <form method = "post" action = "mailer.php"> 
+    <fieldset>
+        <legend>Contact Information</legend>
+            <table style="margin-left:50px">
+                <tr><td class="ar">Your Name: </td><td><input type="text" name="YourName" size="30" /></td></tr>
+                <tr><td class="ar">Email Address: </td><td><input type="text" name="email" size="30"/></td></tr>
+                <tr><td  class="ar">Phone Number: </td><td><input type="text" name="phone" size="30" /></td></tr>
+                <tr><td>Perferred Contact: </td><td style="padding-left:30px">Email <input type="radio" name="pcontact" value="e"/> Phone 
+                <input type="radio" name="pcontact" value="p" /></td></tr>
+            </table>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Feedback For Us</legend>
+        
+        <p>
+        How satisfied were you with the website design?
+        <select name="satisfaction">
+            <option value="vs">Very Satisfied</option>
+            <option value="s">Satisfied</option>
+            <option value="n">Neither Satisfied nor Dissatisfied</option>
+            <option value="d">Dissatisfied</option>
+            <option value="vd">Very Dissatisfied</option>
+        </select>
+        </p>
+
+        <p>
+            How satisfied were you with the attraction suggestions?
+            <select name="satisfaction">
+                <option value="vs">Very Satisfied</option>
+                <option value="s">Satisfied</option>
+                <option value="n">Neither Satisfied nor Dissatisfied</option>
+                <option value="d">Dissatisfied</option>
+                <option value="vd">Very Dissatisfied</option>
+            </select>
+            </p>
+    
+        <p>
+            How satisfied were you with the food spot suggestions?
+            <select name="satisfaction">
+                <option value="vs">Very Satisfied</option>
+                <option value="s">Satisfied</option>
+                <option value="n">Neither Satisfied nor Dissatisfied</option>
+                <option value="d">Dissatisfied</option>
+                <option value="vd">Very Dissatisfied</option>
+                </select>
+        </p>
+
+        <p>Please explain your satisfaction choice above:</p>
+        <p><textarea name="comments" rows="5" cols="60"></textarea></p>
+    
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Any Additional Questions?</legend>
+        <p>Questions/Concerns:</p>
+        <p><textarea name="comments" rows="5" cols="60"></textarea></p>
+    </fieldset>
+       
+    <p style="text-align:center"><input type="submit" name="Submit" value="Submit" />&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset" /></p> 
+
+    </form>
+</div>
+</body>
+</html>
