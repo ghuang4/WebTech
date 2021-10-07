@@ -1,4 +1,4 @@
-h1{font-family:Handy ;font-size: 55px; text-align:center;}
+h1{font-family:Handy ;font-size: 55px; text-align:center; color:black}
 .navbar {position: sticky; top: 0px; left: 0px; width: 100%;font-family:Serat; font-size:18px;
 padding-left: 0%}
 .navbar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color:#006699; border-radius: 5px;}
@@ -6,6 +6,8 @@ padding-left: 0%}
 .navbar li a {display: inline-block; color:white; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
 .navbar a.Active {background-color:grey;}
 .navbar li a:hover, .Nav_Bar a.Active:hover {background-color:powderblue;}
-.navbar .Dropdown_Content {display: none; position: absolute; background-color: rgb(50, 50, 50); min-width: 100px; z-index: 1; }
+.navbar .Dropdown_Content {display: none; position: absolute; background-color:powderblue; min-width: 100px; z-index: 1; }
 .navbar .Dropdown_Content a {display: block; text-align:left;}
-.navbar li.Dropdown:hover .Dropdown_Content {display: block;}
+.navbar li.Dropdown:hover .Dropdown_Content {display: block;background-color:#006699}
+p{font-size:20px;}
+body{background-color:white}

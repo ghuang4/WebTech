@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+        function ChgStyle()
+        {x = document.getElementById("myh1");
+         x.style.color="green";
+         x.style.font="30pt 'Comic Sans MS'";
+         x.style.textAlign="center";
+        } 
+
+        function a() 
+        {
+            document.getElementById("me").src="volleyball.jpg";
+        }
+
+        function b() 
+        {
+            document.getElementById("one").innerHTML = "So cool";
+            document.getElementById("one").style.textAlign = "center"; 
+            document.getElementById("one").style.font = "30pt 'Georgia'";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Gina</title>
+    <link rel = "session4stylesheet" href = "session4stylesheet.css" type = "text/css" />
+    <link rel = "session4stylesheet" href = "https://www.fontspace.com/metta-dahlia-font-f57227"/>
+
+</head>
+
+<style>
+    body {background-color:bisque; margin: 50px 50px 50px 50px;}
+    h1 {text-align:center;font-family:Times New Roman; font-size:25px; border:2px solid purple}
+    p {font-family:Georgia; font-size:20px;}
+    hr {width:70%; color:coral; height: 6px}
+    body {background-image: url('https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946_1280.jpg')}
+    p.bord {border:6px solid blue}
+    span {font-variant:small-caps; font-style:MettaDahlia; color:rosybrown}
+    h1{text-shadow: 5px 5px 3px plum}
+    @font-face{font-family: "MettaDahlia"; src:url("MettaDahlia.otf")}
+    img{width: 300px;}
+    h2{text-align: center;}
+
+</style>
+
+<body> 
+    <h1 id = "myh1" onclick = "ChgStyle()" >Gina's Information</h1>
+    <h1 style="border:pink; border-style:solid"></h1>
+    
+    <div class = "one" id = "one" onmouseover = "b()">
+        <p> I am from Queens,NY and the best way to contact me is my email ghuang4@babson.edu
+        Here is a professional headshot of me!</p>
+    </div>
+
+    <h2>
+        <img src="Headshot.jpeg" id = "me" alt="picture of me" width="300" onmouseover = "a()"/>
+    </h2>
+
+    <hr>
+    <p>I played <i>volleyball</i> in highschool and I was captain of my team for two years. <b>Here at Babson I am concentrating in Marketintg and Business Analytics</b>.
+    Here are the class I'm taking this semester and their associated times!
+    <ol>
+        <li>Public Discourse
+            <ul>
+                <li>MW 10AM-11:30AM</li>
+            </ul>
+        </li>
+        <li>Web Technologies</li>
+            <ul>
+                <li>TTH 8AM-9:30AM</li>
+            </ul>
+        </li>
+        <li>Digital Marketing</li>
+            <ul>
+                <li>TTH 10AM-11:30AM</li>
+            </ul>
+        </li>
+    </ol>
+    </p>
+    <p class = "p.bord"></p>
+    
+    <a href="interests.htm"> Click here to learn about my interests!</a>
+</body>
+</html>
+
