@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "keywords" content = "form, questions on New York, reviews, feedback, inquiries, contact us, customer service">
+    <meta name = "description" content = "Please fill out this form if you have any questions about our website or provide some feedback on what you think of these New York City suggestions.">
+    <title>Contact Us</title>
+
+<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+<link rel="stylesheet" href="https://www.fontspace.com/handy-quomte-font-f57503"/>
+<link rel="stylesheet" href="https://www.fontspace.com/serat-font-f57208"/>
+
+<style>
+    @font-face{font-family: "Handy"; src:url("handy.ttf")}
+    @font-face{font-family: "Serat"; src:url("serat.ttf")}
+    .form {width:50%; margin:auto; font-family:Times New Roman; font-size:20px;}
+	h1, h2 {text-align:center;font-family:Serat; font-size: 30px;}
+	.ar {text-align:right}
+    .middle{position:absolute;top:45%;left:50%;transform: translate(-50%,-50%);font-family:Serat;font-size:70px;color:white;text-shadow: 5px 5px black}
+    .fix{text-align:left;}
+    p{padding: 0px 0px 0px 0px;}
+
+</style>
+
+</head>
+
+<body>
+    <div class = "navbar">
+        <ul>
+            <li style= "padding-left:20%"><a href = "index.htm" class = "Active">Home</a></li>
+
+            <li class = "Dropdown"><a href = "manhattan.html">Manhattan</a>
+                <div class = "Dropdown_Content">
+                    <a href = "manhattan_sub_1.html">Attractions</a>
+                    <a href = "manhattan_sub_2.html">Food Spots</a>
+                </div>
+            </li> 
+
+            <li class = "Dropdown"><a href = "queens.html">Queens</a>
+                <div class = "Dropdown_Content">
+                    <a href = "queens_sub_1.html">Attractions</a>
+                    <a href = "queens_sub_2.html">Food Spots</a>
+                </div>
+            </li> 
+
+            <li class = "Dropdown"><a href = "brooklyn.html">Brooklyn</a>
+                <div class = "Dropdown_Content">
+                    <a href = "brooklyn_sub_1.html">Attractions</a>
+                    <a href = "brooklyn_sub_2.html">Food Spots</a>
+                </div>
+            </li> 
+            
+            <li><a href = "aboutme.html">About Me</a></li>
+            <li><a href = "contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class = "section1">
+        <img src = "header.jpg" alt = "header" width = "1245" height = "450">
+        <div class = "middle" style = "text-align:center;">Contact Us</div>
+    </div>
+    
+    <h2>Please provide us with some feedback on these attractions and food spots! Email us with any questions or inquiries and we'll be happy to answer them for you! </h2>
+    
+    <br>
+    
+    <div class ="form">
+    <form method = "post" action = "http://wtspring13sec2.babson.edu/gordon/mailer.php"> 
+    <fieldset>
+        <legend>Contact Information</legend>
+            <table style="margin-left:50px">
+                <tr><td class="ar">Your Name: </td><td><input type="text" name="YourName" size="30" /></td></tr>
+                <tr><td class="ar">Email Address: </td><td><input type="text" name="email" size="30"/></td></tr>
+                <tr><td  class="ar">Phone Number: </td><td><input type="text" name="phone" size="30" /></td></tr>
+                <tr><td>Perferred Contact: </td><td style="padding-left:30px">Email <input type="radio" name="pcontact" value="e"/> Phone 
+                <input type="radio" name="pcontact" value="p" /></td></tr>
+            </table>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Feedback For Us</legend>
+        
+        <p class = "fix">
+        How satisfied were you with the website design?
+        <select name="satisfaction">
+            <option value="vs">Very Satisfied</option>
+            <option value="s">Satisfied</option>
+            <option value="n">Neither Satisfied nor Dissatisfied</option>
+            <option value="d">Dissatisfied</option>
+            <option value="vd">Very Dissatisfied</option>
+        </select>
+        </p>
+
+        <p class = "fix">
+            How satisfied were you with the attraction suggestions?
+            <select name="satisfaction">
+                <option value="vs">Very Satisfied</option>
+                <option value="s">Satisfied</option>
+                <option value="n">Neither Satisfied nor Dissatisfied</option>
+                <option value="d">Dissatisfied</option>
+                <option value="vd">Very Dissatisfied</option>
+            </select>
+            </p>
+    
+        <p class = "fix">
+            How satisfied were you with the food spot suggestions?
+            <select name="satisfaction">
+                <option value="vs">Very Satisfied</option>
+                <option value="s">Satisfied</option>
+                <option value="n">Neither Satisfied nor Dissatisfied</option>
+                <option value="d">Dissatisfied</option>
+                <option value="vd">Very Dissatisfied</option>
+                </select>
+        </p>
+
+        <p>Please explain your satisfaction choice above:</p>
+        <p><textarea name="comments" rows="5" cols="60"></textarea></p>
+    
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Any Additional Questions?</legend>
+        <p>Questions/Concerns:</p>
+        <p><textarea name="comments" rows="5" cols="60"></textarea></p>
+    </fieldset>
+       
+    <p style="text-align:center"><input type="submit" name="Submit" value="Submit" />&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset" /></p> 
+
+    </form>
+
+</div>
+
+    <footer style = "background-color:bisque; background-position: center bottom; background-size:cover; height: 200px;">
+        <br>
+        <p style = "text-align: center;font-family:Serat;">Gina Huang<br>
+        <a href = "tel:+19292275338">(929) 227-5338</a> <br>
+        <a href = "mailto:ghuang4@babson.edu">ghuang4@babson.edu</a> 
+        
+        <br>
+
+        <a  href = "https://www.facebook.com/gina.huang.90038/" target = "_blank">Facebook | </a>
+        <a  href = "https://www.instagram.com/_ginaaxz_/" target = "_blank">Instagram | </a>
+        <a  href = "https://www.linkedin.com/in/ginahuang3/" target = "_blank">LinkedIn </a>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conact Us Page</title>
-</head>
+    <meta name = "keywords" content = "form, questions on New York, reviews, feedback, inquiries, contact us, customer service">
+    <meta name = "description" content = "Please fill out this form if you have any questions about our website or provide some feedback on what you think of these New York City suggestions.">
+    <title>Contact Us</title>
 
 <link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 <link rel="stylesheet" href="https://www.fontspace.com/handy-quomte-font-f57503"/>
@@ -14,10 +15,16 @@
 <style>
     @font-face{font-family: "Handy"; src:url("handy.ttf")}
     @font-face{font-family: "Serat"; src:url("serat.ttf")}
-    .form {width:50%; margin:auto}
-	h1, h2 {text-align:center}
+    .form {width:50%; margin:auto; font-family:Times New Roman; font-size:20px;}
+	h1, h2 {text-align:center;font-family:Serat; font-size: 30px;}
 	.ar {text-align:right}
+    .middle{position:absolute;top:45%;left:50%;transform: translate(-50%,-50%);font-family:Serat;font-size:70px;color:white;text-shadow: 5px 5px black}
+    .fix{text-align:left;}
+    p{padding: 0px 0px 0px 0px;}
+
 </style>
+
+</head>
 
 <body>
     <div class = "navbar">
@@ -49,6 +56,11 @@
             <li><a href = "contactus.html">Contact Us</a></li>
         </ul>
     </div>
+
+    <div class = "section1">
+        <img src = "header.jpg" alt = "header" width = "1245" height = "450">
+        <div class = "middle" style = "text-align:center;">Contact Us</div>
+    </div>
     
     <h2>Please provide us with some feedback on these attractions and food spots! Email us with any questions or inquiries and we'll be happy to answer them for you! </h2>
     
@@ -72,7 +84,7 @@
     <fieldset>
         <legend>Feedback For Us</legend>
         
-        <p>
+        <p class = "fix">
         How satisfied were you with the website design?
         <select name="satisfaction">
             <option value="vs">Very Satisfied</option>
@@ -83,7 +95,7 @@
         </select>
         </p>
 
-        <p>
+        <p class = "fix">
             How satisfied were you with the attraction suggestions?
             <select name="satisfaction">
                 <option value="vs">Very Satisfied</option>
@@ -94,7 +106,7 @@
             </select>
             </p>
     
-        <p>
+        <p class = "fix">
             How satisfied were you with the food spot suggestions?
             <select name="satisfaction">
                 <option value="vs">Very Satisfied</option>
@@ -121,6 +133,22 @@
     <p style="text-align:center"><input type="submit" name="Submit" value="Submit" />&nbsp;&nbsp;&nbsp;<input type="reset" name="Reset" value="Reset" /></p> 
 
     </form>
+
 </div>
+
+    <footer style = "background-color:bisque; background-position: center bottom; background-size:cover; height: 200px;">
+        <br>
+        <p style = "text-align: center;font-family:Serat;">Gina Huang<br>
+        <a href = "tel:+19292275338">(929) 227-5338</a> <br>
+        <a href = "mailto:ghuang4@babson.edu">ghuang4@babson.edu</a> 
+        
+        <br>
+
+        <a  href = "https://www.facebook.com/gina.huang.90038/" target = "_blank">Facebook | </a>
+        <a  href = "https://www.instagram.com/_ginaaxz_/" target = "_blank">Instagram | </a>
+        <a  href = "https://www.linkedin.com/in/ginahuang3/" target = "_blank">LinkedIn </a>
+        </p>
+    </footer>
+
 </body>
 </html>
