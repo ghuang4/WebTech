@@ -27,12 +27,24 @@
 				{
 					alert("One fun topic is required");
 				}
-				else
+
+				else if (document.getElementById("grad").value == "")
+				{
+					alert("Please enter your graduation year");
+					document.getElementById("grad").focus();
+				}
+					else if (document.getElementById("grad").value < 2021 || document.getElementById("grad").value > 2024)
+		
+				{
+					alert("Your graduation year must be between 2021 to 2024");
+					document.getElementById("grad").focus();
+				}
+					else 
 				{
 					return true;
 				}
 					return false;
-			}
+	}
 	</script>
 	
 </head>
@@ -102,6 +114,12 @@
 		cols = "29">
 		</textarea>
 	</p>
+
+	<p> When are you graduating?
+		<input type="text" name="graduation" maxlength="4" id="grad"></p>
+		
+		<p>Please add any comments you have
+	<br /><textarea name="comments" rows="5" cols="29"></textarea></p>
 
 	<p>
 		<input type = "submit" value = "Submit" name = "Submit" />
