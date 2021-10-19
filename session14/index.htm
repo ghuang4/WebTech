@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MIS3690 Survey</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<style>
+	td {padding-right:40px}
+	</style>
+
+	<script>
+		function processForm()
+			{
+				if (document.getElementById("fname").value =="")
+				{
+					alert("First name is required");
+					document.getElementById("fname").focus();
+				}
+				else if (document.getElementById("lname").value=="")
+				{
+					alert("Last name is required");
+					document.getElementById("lname").focus();
+				}
+				else if (document.getElementById("images").checked == false && 
+				document.getElementById("css").checked == false && 
+				document.getElementById("tables").checked == false && 
+				document.getElementById("forms").checked ==  false)
+				{
+					alert("One fun topic is required");
+				}
+				else
+				{
+					return true;
+				}
+					return false;
+			}
+	</script>
+	
+</head>
+<body>
+	<form action = "http://wtspring13sec2.babson.edu/gordon/mailer.php" onsubmit = "return processForm()">
+	<h1>MIS3690 Student Survey</h1>	
+	<p>Please complete the following survey.  You must answer each question.  When you are done,
+	    please click on the Submit button.</p>
+
+	<p> First Name
+		<input type = "text" name = "First Name:" maxlength = "100" id = "fname"/>
+		Last Name
+		<input type = "text" name = "Last Name:" maxlenghth = "100" id = "lname"/>
+	</p>
+	<p>
+		Gender: Male
+		<input type = "radio" name = "gender" value = "male" />
+		Female
+		<input type = "radio" name = "gender" value = "female" />
+	</p>
+	<p>
+		What grade do you expect to receive?
+		<select name = "Grade" >
+			<option value = "A">A</option>
+			<option value = "B">B</option>
+			<option value = "C">C</option>
+			<option value = "D">D</option>
+			<option value = "A">F</option>
+		</select>
+	</p>
+
+	<table>
+		<tr>
+			<td rowspan = "4">Which topics did you find to be fun?</td>
+			<td>
+				<input type = "checkbox" name ="Images" 
+				value = "Images" id = "images"/>Images<br/>
+			</td>
+		</tr>	
+
+		<tr id = "css">
+			<td>
+				<input type = "checkbox" name ="CSS" 
+				value = "CSS" id = "css"/>CSS<br/>
+			</td>
+		</tr>
+
+		<tr id = "tables">
+			<td>
+				<input type = "checkbox" name ="Tables" 
+				value = "Tables" id = "tables"/>Tables<br/>
+			</td>
+		</tr>
+
+		<tr id = "forms">
+			<td>
+				<input type = "checkbox" name ="Forms" 
+				value = "Forms" id = "forms"/>Forms<br/>
+			</td>
+		</tr>
+
+	</table>
+
+	<p> Please add any comments you have
+		<br>
+		<textarea name = "comments" rows = "5"
+		cols = "29">
+		</textarea>
+	</p>
+
+	<p>
+		<input type = "submit" value = "Submit" name = "Submit" />
+		<input type = "reset" value = "Reset" name = "Reset" />
+	</p>
+	
+	</form>
+</body>
+</html>
