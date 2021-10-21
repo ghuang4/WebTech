@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>session15 activity</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+
+<style>
+	button{position:absolute; top:0px; left:0px}
+</style>
+
+<script>
+	function click3()
+		{
+			var click1 = Math.floor(Math.random()*501)+"px"
+			var click2 = Math.floor (Math.random()*501)+"px"
+			var buttonclick1 = document.getElementById("clicking");
+			buttonclick1.style.left = click1;
+			buttonclick1.style.top = click2;
+			var types = new Array ("Click Me", "Move Me", "Click Here", "Button", "Next")
+			var random = Math.floor(1+Math.random()*4)
+			document.getElementById("clicking").innerHTML = types[random];
+		}
+</script>
+	
+</head>
+<body>
+	<button id = "clicking" onclick = "click3()">Click Me</button>
+</body>
+</html>
