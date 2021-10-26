@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Gina</title>
+
+<script>
+    var gColors = new Array ("green","yellow","blue","pink","red","orange");
+    var counter = 0
+    function selectggColor()
+    {
+        document.getElementById("changing").style.color = gColors[counter]
+        counter = counter+1
+        if (counter == gColors.length)
+        counter = 0
+    {
+        setTimeout("selectggColor()",500)
+    }
+
+    }
+</script>
+
+<style>
+        body {background-color:bisque;}
+        h1 {text-align:center;font-family:Times New Roman; font-size:25px; border:2px solid purple}
+        p {font-family:Times New Roman; font-size:12pt;}
+        hr {width:70%; color:coral; height: 6px}
+        body {background-image: url('https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946_1280.jpg')}
+        p.bord {border:6px solid blue}
+</style>
+    
+</head>
+
+<body onload = "selectggColor()"> 
+    <h1 id = "changing" style = "color:green"> Gina's Information </h1>
+
+    <p>
+        <button onclick = "changeColor()">Start animation</button>
+    </p>
+
+    <p>I am from Queens,NY and the best way to contact me is my email ghuang4@babson.edu
+        Here is a professional headshot of me!  
+    <p>
+        <img src="Huang_Gina_Headshot.jpeg" alt="picture of me" width="300"/>
+    </p>  
+
+    <hr>
+    <p>I played <i>volleyball</i>in highschool and I was captain of my team for two years. <b>Here at Babson I am concentrating in Marketintg and Business Analytics</b></p>
+    <p class = "p.bord"></p>
+    
+    <a href="index.htm"> Click here to learn about my interests!</a>
+</body>
+</html>
+
