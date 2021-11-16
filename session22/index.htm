@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Session22</title>
+
+	<style>
+	/* Your styles go here */
+	</style>
+	
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<script>
+	$(function(){
+	   // jQuery methods go here...
+
+	   $(".hide").click(function(){
+			$("tr:odd").hide()
+		});
+		$("tr").click(function(){
+			$(this).fadeOut(3000)
+		});
+		$(".show").click(function(){
+			$("*").show()
+			$("tr:odd").css("background-color","yellow")
+		})
+	});
+	/* Your additional JavaScript goes here */
+	</script>
+  </head>
+  <body>
+	<!-- Your HTML goes here -->
+	<table>
+		<tr><td>0</td></tr>
+		<tr><td>1</td></tr>
+		<tr><td>2</td></tr>
+		<tr><td>3</td></tr>
+	</table>
+	<button class="hide">Hide Odd</button>
+	<button class="show">Show All</button>
+  </body>
+</html>
