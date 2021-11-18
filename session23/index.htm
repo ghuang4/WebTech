@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+    <script>
+
+    $(document).ready(function(){
+        $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+        });
+
+        $("#btn1").click(function(){
+        alert("Text: " + $("#test").text());
+        });
+        $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+        });
+
+        $("#buttonAfter").click(function(){
+		$(".BA").after("<p>This is an added paragraph</p>")
+		})
+
+        $("button").click(function(){
+            $("h1, h2, p").addClass("blue");
+            $("div").addClass("important");
+        
+        $("button").click(function(){
+        $("div").animate({left: '250px'});
+                     
+        $("button").click(function(){
+        $("#div").delay("slow").fadeIn();
+        
+        $("#btn2").click(function(){
+        $("ol").prepend("<li>Hello!</li>");
+  });
+
+    });
+        
+    });
+
+    });
+
+	   // jQuery methods go here...
+	});
+	/* Your additional JavaScript goes here */
+
+        function ChgStyle()
+        {
+         document.getElementById("myh1").style.color="green";
+         document.getElementById("myh1").style.font="30pt 'Comic Sans MS'";
+         document.getElementById("myh1").style.textAlign="center";
+        } 
+
+        function a() 
+        {
+            document.getElementById("me").src="volleyball.jpg";
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Gina</title>
+    <link rel = "session4stylesheet" href = "session4stylesheet.css" type = "text/css" />
+
+    
+<style>
+    body {background-color:bisque; margin: 50px 50px 50px 50px;}
+    h1 {text-align:center;font-family:Times New Roman; font-size:25pt; border:2px solid purple}
+    p {font-family:Times New Roman; font-size:12pt;}
+    hr {width:70%; color:coral; height: 6px}
+    body {background-image: url('https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946_1280.jpg')}
+    p.bord {border:6px solid blue}
+    span {font-variant:small-caps; color:rosybrown}
+    h1{text-shadow: 5px 5px 3px plum}
+    img{width: 300px;}
+    #panel {padding:50px; display:none;}
+
+    .important {font-weight: bold; font-size: xx-large;}
+    .blue {color: blue;}
+
+</style>
+
+</head>
+
+<body> 
+<div style = "background:lavenderblush;height:100px;width:100px;position:absolute;">
+<button>Start Animation</button>
+    <p>
+        Introducing:
+    </p>
+</div>
+
+<div id = "flip">
+    <h1 id = "myh1" onclick = "ChgStyle()" >Gina's Information</h1>
+</div>
+
+<div id = "panel">
+    <p>I am from Queens,NY and the best way to contact me is my email ghuang4@babson.edu
+        Here is a professional headshot of me!  
+    <p>
+</div>
+        <img src="Headshot.jpeg" id = "me" alt="picture of me" width="300" onmouseover = "a()"/>
+    </p>  
+    
+    <hr>
+
+    <p class = "BA">I played <i>volleyball</i>in highschool and I was captain of my team for two years.
+    </p>
+
+	<p><button id="buttonAfter">After</button></p>
+ 
+    <p>   
+    Here at Babson I am concentrating in Marketintg and Business Analytics. 
+    
+    <b>
+    Here are the class I'm taking this semester and their associated times!
+    </b>
+
+    </p>
+
+    <ol>
+        <li>Public Discourse
+            <ul>
+                <li>MW 10AM-11:30AM</li>
+            </ul>
+        </li>
+        
+        <li>Web Technologies
+            <ul>
+                <li>TTH 8AM-9:30AM</li>
+            </ul>
+        </li>
+
+        <li>Digital Marketing
+            <ul>
+                <li>TTH 10AM-11:30AM</li>
+            </ul>
+        </li>
+
+    </ol>
+
+    <button id="btn2">Prepend list item</button>
+
+    <p class = "p.bord"></p>
+    
+    <a href="interests.htm"> Click here to learn about my interests!</a>
+
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>
+
+</body>
+</html>
+
