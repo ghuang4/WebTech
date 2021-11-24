@@ -25,12 +25,12 @@
 </style>
 
 <script>
-    processForm()
-    {
-        if(document.getElementById("name").value == (''))
+    function processForm()
+    { 
+        if(document.getElementById("names").value == (''))
         {
             alert("Your Full Name is Required")
-            document.getElementById("name").focus();
+            document.getElementById("names").focus();
         }
 
         else if (document.getElementById("email").value == (''))
@@ -113,6 +113,7 @@
             
             <li><a href = "aboutme.html">About Me</a></li>
             <li><a href = "contactus.html">Contact Us</a></li>
+            <li><a href = "credits.htm">Credits</a></li>
         </ul>
     </div>
 
@@ -126,11 +127,11 @@
     <br>
     
     <div class ="form">
-    <form method = "post" action = "http://wtspring13sec2.babson.edu/gordon/mailer.php" onsubmit = "processForm()"> 
+    <form method = "post" action = "http://wtspring13sec2.babson.edu/gordon/mailer.php" onsubmit = "return processForm()"> 
     <fieldset>
         <legend>Contact Information</legend>
             <table style="margin-left:50px">
-                <tr><td class="ar">Your Name: </td><td><input type="text" name="YourName" size="30" id = "name" /></td></tr>
+                <tr><td class="ar">Your Name: </td><td><input type="text" name="YourName" size="30" id = "names" /></td></tr>
                 <tr><td class="ar">Email Address: </td><td><input type="text" name="email" size="30" id = "email"/></td></tr>
                 <tr><td  class="ar">Phone Number: </td><td><input type="text" name="phone" size="30" id = "numbers"/></td></tr>
                 <tr><td>Perferred Contact: </td><td style="padding-left:30px">Email <input type="radio" name="pcontact" value="e" id = "E"/> Phone 
