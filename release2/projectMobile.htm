@@ -25,6 +25,21 @@
     .button3{font-family:Serat;font-size:20px;text-decoration: none;background-color:#006699 ;color:white;border-top: 1px solid #CCCCCC;border-right: 5px solid #333333;border-bottom: 1px solid #333333;border-left: 1px solid #CCCCCC;}
     .button4{font-family:Serat;font-size:20px;text-decoration: none;background-color:#006699 ;color:white;border-top: 1px solid #CCCCCC;border-right: 5px solid #333333;border-bottom: 1px solid #333333;border-left: 1px solid #CCCCCC;}
     .overview{background-color:bisque;}
+    .navbar {position: sticky; top: 0px; left: 0px; width: 100%;font-family:Serat; font-size:18px;
+    padding-left: 0%;z-index:2;}
+    .navbar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color:#006699; border-radius: 5px;}
+    .navbar li {float: left; width: 10%;}
+    .navbar li a {display: inline-block; color:white; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
+    .navbar a.Active {background-color:grey;}
+    .navbar li a:hover, .Nav_Bar a.Active:hover {background-color:powderblue;}
+    .navbar .Dropdown_Content {display: none; position: absolute; background-color:powderblue; min-width: 100px; z-index: 3; }
+    .navbar .Dropdown_Content a {display: block; text-align:left;}
+    .navbar li.Dropdown:hover .Dropdown_Content {display: block;background-color:#006699}
+    p{font-size:20px;font-family:Times New Roman; text-align:justify;}
+    body{background-color:white}
+    a {text-decoration:none;}
+    hr{border: 3px solid powderblue; border-radius:2px;}
+    p{padding: 25px 25px 25px 25px;}
     </style>
 
     <script>
@@ -127,12 +142,12 @@
         </div>
         <h1 style = "width:1245px">
         Want to hitup some of NYC's <span id = "HG" onmouseover = "chgWords()">HIDDEN GEMS?</span> Check out <span id = "changing">some of these incredible spots in the heart of New York City!</span>
-        </h1>
         <p style = "text-align:center">
-        <a href = "manhattan_sub_1.html" class = "button2">Manhattan</a>
-        <a href = "queens_sub_1.html" class = "button3">Queens</a>
-        <a href = "brooklyn_sub_1.html" class = "button4">Brookyln</a>
-        </p>
+            <a href = "manhattan_sub_1.html" class = "button2">Manhattan</a>
+            <a href = "queens_sub_1.html" class = "button3">Queens</a>
+            <a href = "brooklyn_sub_1.html" class = "button4">Brookyln</a>
+            </p>
+        </h1>
         
         <h2>
         <img src = "statue.jpg" alt = "statueofliberty" width = "1245px" height = "700"/>
@@ -157,7 +172,7 @@
     <div class = video>
         <h1 id = "nyc" onmouseover = "changeColor()" style = "width:1200px">New York City Views</h1>
             <p style = "text-align: center; width:650px">
-                <iframe width="1245px" height="300" src="https://www.youtube.com/embed/h3fUgOKFMNU?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1200px" height="300" src="https://www.youtube.com/embed/h3fUgOKFMNU?autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </p>
     </div>
 
