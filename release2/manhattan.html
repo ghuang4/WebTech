@@ -18,6 +18,20 @@
     .middle{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);font-family:Serat;font-size:90px;color:white;text-shadow: 5px 5px black}
 </style>
 
+<script>
+    function chgImages()
+    {
+        document.getElementById("images").src = "Manhat.jpg";
+        document.getElementById("images").style.width = "675px"
+    }
+
+    function chgImages2()
+    {
+        document.getElementById("images2").src = "NewYorkMap.jpg"
+        document.getElementById("images2").style.width = "645px"
+    }
+</script>
+
 </head>
 
 
@@ -61,7 +75,7 @@
 
     <h2>
         <img src = "mfound1.jpg" alt = "Founding of Manhattan" width = "550"/>
-        <img src = "mfound2.jpg" alt = "Founding of Manhattan 2" width = "610"/>
+        <img src = "mfound2.jpg" alt = "Founding of Manhattan 2" width = "610" id = "images2" onmouseover = "chgImages2()"/>
     </h2>
 
     <p>   
@@ -79,7 +93,7 @@
     <h2>
         <img src = "boroughmap.jpg" alt = "Map of Boroughs" width = "450" usemap = "#boroughsmap"/>
 
-        <img src = "manhattan.jpg" alt = "Manhattan City" width = "630"/>
+        <img src = "manhattan.jpg" alt = "Manhattan City" width = "630" onmouseover = "chgImages()" id = "images"/>
     </h2>
 
     <map name = "boroughsmap">
