@@ -20,9 +20,40 @@
     p{font-size:20px;}
 </style>
 
+<script>
+    function chgName()
+    {
+        var nicknames = new Array("Huang Jia Ming", "Geedge", "Gigi", "G", "Gina Huang");
+        document.getElementById("gina").innerHTML = nicknames[Math.floor(Math.random()*5)];
+
+        if(document.getElementById("gina").innerHTML == "Huang Jia Ming")
+        {
+            document.getElementById("name").innerHTML = "nickname"
+        }
+    
+        else if(document.getElementById("gina").innerHTML == "Geedge")
+        {
+            document.getElementById("name").innerHTML = "nickname"
+        }
+
+        else if(document.getElementById("gina").innerHTML == "Gigi")
+        {
+            document.getElementById("name").innerHTML = "nickname"
+        }
+
+        else if(document.getElementById("gina").innerHTML == "G")
+        {
+            document.getElementById("name").innerHTML = "nickname"
+        }
+
+        else if(document.getElementById("gina").innerHTML == "Gina Huang")
+        {
+            document.getElementById("name").innerHTML = "name"
+        }
+    }
+</script>
+
 </head>
-
-
 
 <body>
     <div class = "navbar">
@@ -68,7 +99,7 @@
     </h2>
 
     <p>
-        My name is Gina Huang, I am currently 21 years old and I have lived in New York City my entire life! I grew up in Elmhurst, Queens and I live with my two grandparents, older brother and a bunch of uncles, aunts and cousins. I attended Forest Hills High School, graduating in 2018, and now I am currently a senior at Babson College which is located in Wellesley, MA. At Babson, I am concentrating in Marketing and Business Analytics because I am passionate about creating effective and compelling marketing content as well as learning more about the data driven decisions behind it. Alongside this, I also enjoy learning about new cultures especially having grown up in such a diverse environment like New York City. On days where I do venture out of my predominantly Asian neighborhood in Queens, I can always find myself surrounded by fascinating architecture, from modest co-ops in pre-war buildings to Tudor mansions in Forest Hills. Every so often, I visit the heart of New York City: Times Square which is like a Piccadilly Circus in London, with its junctions of streets and crowds with the backdrop of high-rise buildings, skyscrapers and digital billboards that tower over you. I truly appreciate the heterogeneity New York City offers and in some instances, I’m reminded of how we, as New Yorkers, believe in and embrace a diverse and inclusive environment, mitigating the possibility of anyone feeling isolated or ostracized. New York City is truly that one place that serves as its own universe, offering one planet after another for so many people to explore with their friends and family!
+        My <span id = "name">name</span> is <span id = "gina" onclick = "chgName()">Gina Huang</span>, I am currently 21 years old and I have lived in New York City my entire life! I grew up in Elmhurst, Queens and I live with my two grandparents, older brother and a bunch of uncles, aunts and cousins. I attended Forest Hills High School, graduating in 2018, and now I am currently a senior at Babson College which is located in Wellesley, MA. At Babson, I am concentrating in Marketing and Business Analytics because I am passionate about creating effective and compelling marketing content as well as learning more about the data driven decisions behind it. Alongside this, I also enjoy learning about new cultures especially having grown up in such a diverse environment like New York City. On days where I do venture out of my predominantly Asian neighborhood in Queens, I can always find myself surrounded by fascinating architecture, from modest co-ops in pre-war buildings to Tudor mansions in Forest Hills. Every so often, I visit the heart of New York City: Times Square which is like a Piccadilly Circus in London, with its junctions of streets and crowds with the backdrop of high-rise buildings, skyscrapers and digital billboards that tower over you. I truly appreciate the heterogeneity New York City offers and in some instances, I’m reminded of how we, as New Yorkers, believe in and embrace a diverse and inclusive environment, mitigating the possibility of anyone feeling isolated or ostracized. New York City is truly that one place that serves as its own universe, offering one planet after another for so many people to explore with their friends and family!
     </p>
 
     <div style = "background-color:bisque;">

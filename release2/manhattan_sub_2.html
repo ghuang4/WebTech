@@ -21,7 +21,33 @@
         tr:nth-child(odd){background-color:powderblue}
         tr:nth-child(even){background-color:white;}
         caption{font-family:Serat; font-size:30px;color:#006699}
+
+        #panel, #flip {padding: 5px;text-align: center;background-color: white;border: solid 1px #c3c3c3;}
+        #panel {padding: 50px;display: none;}
     </style>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script>
+$(function(){
+    $("tr").click(function (){
+    $("tr").fadeOut("3000");
+    })
+
+    $("#button2show").click(function () {
+        $("tr:odd").show();
+        $("tr:even").show();
+        })
+    });
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+    });
+    });
+
+</script>
+
 </head>
 
 
@@ -152,6 +178,8 @@
             </tr>
             </table>
         </div>
+        <br>
+        <div style = "text-align:center"><button id="button2show">Show Table</button></div>
     <hr>
     </div>
 
@@ -160,10 +188,17 @@
         <img src = "sundaes2.jpg" alt = "Sundaes 2" width = "550"/>
         <img src = "sundaes.jpg" alt = "Sundaes" width = "605"/>
     </h2>
+
+    <div id = "flip">
+        <p style = "font-family:Serat;font-size: 40px; text-align:center;color:#006699;">More Information!</p>
+    </div>
+
+    <div id = "panel">
     <p>
         After enjoying an incredible dinner at Hutaoli, be sure to check out Sundeas and Cones for dessert! Just a few doors down from the bustling 3rd Avenue, Sundaeas and Cones offers a variety of ice cream flavors and even draws inspiration from Asian inspired flavors such as Thai Iced Tea, Taro and Black Sesame. They also serve the all time classic favorites such as vanilla and chocolate but they make it incredibly tastey! I would always stop by and grab their exotic flavors with my all time favorite combination being the Thai Iced Tea and Taro double scoup on a sugar cone. Their other more interesting flavors that I've loved also includes rose matcha, lychee and green tea. For all your ice cream choices, you have the choice to eat it on a wafer or sugar cone, waffle cone, coated waffle cone or a cup. In addition to ice cream, they also offer beverages such as milk shakes, milk shake floats, malted shakes, ice cream soda, sherbert freeze and egg creams. Their rich flavors are homemade with the most phenomenally smooth and buttery ingredients, making this a place you can continuously count on. Not only are their dessert options the best catch for this place but the fact that they offer taste tests for all flavors of your choice, creates that space of perfect customer service. From all of the ice cream places that I have ever tried, this tops the list at being number 1. 
     </p>
-    
+    </div>
+
     <footer style = "background-color:bisque; background-position: center bottom; background-size:cover; height: 200px;">
         <br>
         <p style = "text-align: center;font-family:Serat;">Gina Huang <br>

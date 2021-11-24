@@ -18,6 +18,20 @@
     .middle{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);font-family:Serat;font-size:90px;color:white;text-shadow: 5px 5px black}
 </style>
 
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $(".p1").hide();
+        });
+    $("#show").click(function(){
+    $(".p1").show();
+        });
+});
+
+</script>
+
 </head>
 
 
@@ -62,9 +76,14 @@
         <img src = "queensmap.jpg" alt = "Queens Map" width = "550"/>
         <img src = "queens2.jpg" alt = "People of Queens History" width = "550"/>
     </h2>
-    <p>
+    <p class = "p1">
         Queens was colonized by the Europeans in the 1630s which led Flushing to become what is today known as Flushing Meadow Corona Park. Previously, it was once known as Yorkshire and this specific location in Queens conatains so much history that is fairly unknown to a lot of people. The Flushing colonists were true champions of the right to worship how you pleased. It was actually included in the rough draft portion of the Bill of Rights, specifically to do with freedom of religion. Following the settlement of Flushing, came the establishment of Hempstead, Newton, Oyster Bay and Jamaica. These settlements came under English contorl in 1664 when Peter Stuyvesant surrendered to an English force acting for the Duke of York. It was actually found that before the British has taken control of the greater region, Oyster Bay was the markt hat divided the line between western Long Island and eastern Long Island. However, when the Dutch power began to slip, there was confusion on whether the two towns of Nassau and Suffolk counties today would be a part of New York or Connecticut. Eventually, all of Long Island was turned over to New York by December 1664. In 1683, the Queens county was created as one of the 12 counties of the province of New York and was given its name as to honor the Queen Consort of Charles II, Catherine of Braganza. During the 19th century, Queens was mainly rural but some of its shore communities began attracting summer vacationists. In 1896, Newtown had changed its name to Elmhurst in order to distance themselves from the wasteland known as Newtown Creek which was considered an industrial dumping ground due to the Civil War. The population of Elmhurst was heavily white people of German, Italian, Irish and Polish descent. Once the 1900s hit, this dominant population rapidly dwindle as immigrants flooded Elmhurst. More specifically, the percentages went from a whopping 98% caucasion to only 18% by the late 1900s. New populations of Africans, African Americans, Cubans, Haitians, Indians, Chinese, Koreans, Mexican, Colombians, Dominicans, Filipinos and more started moving into the area. The New York Department of City Planning today even called Elmhurst the most ethnically mixed community in the entire world. It wasn't until the establishment of the Queensboro Bridge in 1909 and the Long Island Rail Road Tunnel in 1910 that truly spurred the entire Queens borough's economic development. Ferry service also became a major hit because of the introduction of the steam engine. Ferry service allowed travelers for the first time a two seat trip from Manhattan to Flushing. 
     </p>
+
+    <div style = "text-align: center">
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    </div>
 
     <div style = "background: bisque;">
     <hr>
@@ -78,6 +97,7 @@
     <p>
         Queens is by far the largest of the five boroughs with a population of 2.3 million people. Approximately 47% of the population in Queens is foreign born mainly because of its rich history capturing the attention of many immigrants. It is home to two of New York City's major airports: LaGuardia Airport and John F. Kennedy International Airport. Some of the most notable landmarks in Queens include Citi Field which is home to the New York Mets baseball team, Flushing Meadows Corona Park, the U.S Open tennis tournament, Aqueduct Racetrack and so much more. Flushing is one of Queens largest neighborhoods and is known for its vast Asian community. The busy intersection of Main Street, Kissena Boulevard and 41st Avenue truly defines the center of Downtown Flushing and the Flushing Chinatown or more notably as the Chinese Times Square. You also have areas such as Jackson Heights and Elmhurst that make up a huge conglomeration of Hispanic, East Asian, Tibetan and South Asian communities. There are even many incredible attractions such as the New York Hall of Science, the John Bowne House and the Noguchi Museum that truly makes Queens such a cultural hub and must visit place!
     </p>
+
     <hr>
     </div>
 

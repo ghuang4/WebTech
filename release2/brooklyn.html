@@ -16,7 +16,19 @@
     @font-face{font-family: "Handy"; src:url("handy.ttf")}
     @font-face{font-family: "Serat"; src:url("serat.ttf")}
     .middle{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);font-family:Serat;font-size:90px;color:white;text-shadow: 5px 5px black}
+    .red{color:red};
 </style>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("h1, h2, p").toggleClass("red");
+
+});
+});
+</script>
 
 </head>
 
@@ -58,6 +70,11 @@
     </div>
 
     <h1>History of Brooklyn</h1>
+
+    <div style = "text-align:center">
+        <button>Toggle Class</button>
+    </div>
+
     <h2>
         <img src = "brooklyn1.jpg" alt = "Brooklyn 1" width = "650"/>
         <img src = "brooklyn2.jpg" alt = "Brooklyn 2" width = "585"/>
