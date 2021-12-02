@@ -19,7 +19,6 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	
 	<script>
-	/* Your JavaScript goes here */
 	$(function() {
         $("#p1").mouseenter(function() {
             $("#aa").addClass("c");
@@ -30,8 +29,13 @@
         $("#m").click(function() {
             $("#mb").attr("href", "http://www.mass.gov");
         });
-        $("#d").datepicker();
       });
+
+    var t = new Date();
+    var date = (t.getMonth() + 1)+ '/' + t.getDate() + '/' + t.getFullYear();
+    function getCurrentDate(){
+		document.getElementById("output").value = date;
+	}   
 	</script>
   </head>
 
@@ -48,7 +52,8 @@
 			</td>
 		</tr>
 	</table>
-	<p>Date: <input type="text" name="d" id = "d"></p>
+	<p>Date: <input type="text" name="d" id = "output" onfocus = "getCurrentDate()">
+	</p>
 	<p id="p1">_________________<br />
 	Source: Wikipedia</p>
   </body>
